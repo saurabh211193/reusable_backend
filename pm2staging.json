@@ -1,0 +1,9 @@
+{
+    "apps": [{
+        "name": "ARC-API",
+        "script": "index.js",
+        "env": {
+            "NODE_ENV": "staging"
+        }
+    }]
+}

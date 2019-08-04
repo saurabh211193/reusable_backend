@@ -1,0 +1,200 @@
+<style type="text/css">
+	/*css by ram start here */
+.mainbox{
+  margin: 50px auto 25px;
+  max-width: 450px;
+  padding:15px;
+}
+.mainbox .login-panel{
+  padding-top: 60px;
+  background: url(/assets/images/login-bg.png) no-repeat top left / 130px 75px  scroll;
+}
+.mainbox .logo-section{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.mainbox .logo-section > img{
+  max-width: 100%;
+  max-height: 80px;
+ }
+ .mainbox .social-login-title{
+  font-size: 15px;
+  color: #737373;
+  font-weight: bold;
+ }
+ .mainbox .social-btn-group{
+    margin:0 -4px 40px;
+ }
+ .mainbox .social-btn-group .social-login-btn{
+  width: calc(33.33% - 3px);
+  display: inline-block;
+  padding:0 5px;
+ }
+ .mainbox .social-btn-group .social-login-btn>button{
+  border-radius: 30px;
+  height: 60px;
+  color: #fff;
+  font-size: 28px;
+  padding: 0;
+  outline: none;
+  border: 0;
+ }
+ .social-login-btn>button:hover, .social-login-btn>button:focus{
+  color: #fff;
+  outline: none;
+ }
+.social-login-btn>button.fb{
+  background-color: #4460b0;
+}
+.social-login-btn>button.tw{
+  background-color: #33ccff;
+}
+.social-login-btn>button.gp{
+  background-color: #d6492f;
+}
+ .login-form-field{
+  padding:0 15px;
+  margin-top: 40px;
+ }
+.login-form-field md-input-container{
+  margin:15px 0 !important; 
+}
+.login-form-field md-input-container .md-input{
+  font-size: 16px;
+  font-weight: bold;
+  color: #3b3b3b;
+  padding: 5px 0 15px;
+}
+.login-form-field md-input-container.md-input-focused .md-input{
+  padding-bottom: 15px;
+}
+#showPass{
+  position: absolute;
+  right: 0;
+  color: #7f7f7f;
+}
+.mainbox .saprator{
+    width: 100px;
+    margin:0 auto;
+    text-align: center;
+    padding: 0 40px;
+    position: relative;
+    font-weight: bold;
+    color: #737373;
+ }
+.mainbox .saprator:before, .saprator:after{
+  content: '';
+  display: block;
+  height: 1px;
+  width: 30px;
+  background: #b9b9b9;
+  position: absolute;
+  top: 10px;
+ }
+.mainbox .saprator:before{
+  left: 0;
+  }
+.mainbox .saprator:after{
+  right: 0;
+}
+.mainbox .login-btn{
+  height: 60px;
+  -webkit-border-radius: 50px !important;
+  -ms-border-radius: 50px !important;
+  -o-border-radius: 50px !important;
+  -moz-border-radius: 50px !important;
+  border-radius: 50px !important;
+  background-color: #0269b4 !important;
+  border:0 !important;
+  font-size: 20px !important;
+}
+.footer-control{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.footer-control > a{
+  color: #565656;
+  font-size: 15px;
+  font-weight: bold;
+}
+.footer-control > a:hover{
+  text-decoration: none;
+}
+.footer-control:after{
+  content: '|';
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  font-size: 23px;
+  top: -7px;
+  color: #cccccc;
+}
+.register-header{
+  position: relative;
+  text-align: center;
+  margin-top: -50px;  
+}
+.register-header .regTitle{
+  color: #575757;
+  font-size: 22px;
+  font-weight: bold;
+}
+.register-header .closeBtn{
+  position: absolute;
+  right: 0;
+  top: -10px;
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-size: 26px;
+  font-family: Arial;
+  transform: scaleX(1.4);
+}
+
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="/lib/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src = "/lib/jquery-1.10.2.js" ></script>
+<script src = "/lib/bootstrap.min.js"></script>
+<div class="container">    
+  <div id="loginbox" class="mainbox"> 
+    <div class="panel panel-info">  
+      <div class="login-panel">                   
+        <div class="panel-body">  
+          <div class="register-header">
+            <!-- <h2 class="regTitle">Register</h2> -->
+            <button type="button" class="closeBtn">X</button>
+          </div>    
+          <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+          <div class="logo-section">
+              <img src="/assets/images/affle-logo.png">
+          </div>
+
+
+          <form action id="loginform" class="form-horizontal" role="form" method="post">
+            <div class="login-form-field clearfix">
+              <div class="from-group col-sm-8 col-md-offset-2">
+                <div layout-gt-sm="row">
+                  <div class="form-group" flex-gt-sm>
+                    <label>New Password</label>
+                    <input class="form-control" id="" type="password" name="password" required="true" >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:10px" class="form-group">
+              <div class="col-sm-8 col-md-offset-2 controls text-center" style="margin-bottom: 20px">
+                <button id="loginBtn" type="submit" class="btn btn-block btn-primary ">Submit</button>
+              </div>
+            </div>
+          </form> 
+        </div>    
+      </div>                 
+    </div>  
+  </div>
+</div>

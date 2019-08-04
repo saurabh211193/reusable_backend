@@ -1,0 +1,267 @@
+
+definitions:
+  Login:          
+    type: object
+    required:
+      - email
+      - password
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+
+  Signup:          
+    type: object
+    required:
+      - email
+      - password
+    properties:
+      name:
+        type: string
+      password:
+        type: string
+      email:
+        type: string
+      phone_number:
+        type: string
+
+  Forget:
+    type: object
+    required: 
+      - email
+    properties:
+      email:
+        type: string
+
+  
+  VerifyForget:
+    type: object
+    required:
+      - code
+      - password
+    properties:
+      code:
+        type: string
+      password:
+        type: string
+
+  FbLogin:
+    type: object
+    required:
+      - id_token
+      - resVal
+    properties:
+      id_token:
+        type: string
+      resVal:
+        type: string
+
+  GoogleLogin:
+    type: object
+    required:
+      - id_token
+      - resVal
+    properties:
+      id_token:
+        type: string
+      resVal:
+        type: string
+            
+  FbSocial:
+    type: object
+    required:
+      - id_token
+    properties:
+      id_token:
+        type: string    
+
+  GoogleSocial:
+    type: object
+    required:
+      - id_token
+    properties:
+      id_token:
+        type: string
+
+  TwitterSocial:
+    type: object
+    required:
+      - id_token
+      - secret
+    properties:
+      id_token:
+        type: string
+      secret:
+        type: string
+
+  SignUpUser:
+    required: 
+      - fN
+      - pwd
+      - email
+      - pNo
+    properties:
+      fN:
+        type: string
+      lN:
+        type: string
+      pwd:
+        type: string
+      pNo: 
+        type: string
+      email:
+        type: string
+      socialId:
+        type: string
+      loginType:
+        type: string
+      token:
+        type: string
+      DOB: 
+        type: string
+      gender:
+        type: string
+      otp: 
+        type: string
+      
+       
+    
+      
+  LogInUser:
+    type: object
+    required: 
+      - email
+      - pwd
+    properties:
+      email:
+        type: string
+      pwd:
+        type: string
+
+  ForgetUser:
+    type: object
+    required: 
+      - email
+    properties:
+      email:
+        type: string
+
+  UserVerifyForget:
+    type: object
+    required:
+      - password
+    properties:
+      password:
+        type: string
+  
+  UserFeedback: 
+    type: object
+    required:
+      - title
+    properties:
+      title:
+        type: string  
+      description:
+        type: string
+      rating:
+        type: number
+
+  UploadFile:
+    type: object
+    required:
+    properties:
+
+  QRCode:
+    type: object
+    required:
+      - data
+    properties:
+      data:
+        type: string
+      
+      
+  YoutubeSearch:
+    type: object
+    properties:
+      name:
+        type: string
+      pageToken:
+        type: string
+
+  CSV:
+    type: object
+    required:
+      - email
+    properties:
+      email:
+        type: string 
+
+  PDF:
+    type: object
+    required:
+    properties:
+
+  Admin:
+    type: object
+    required:
+    properties:
+
+
+  AddToCart:
+    required: 
+      - email
+      - productId
+      - type
+      - name
+      - price
+      - size
+      - quantity
+    properties:
+      email:
+        type: string
+      productId:
+        type: string
+      type:
+        type: string
+      name: 
+        type: string
+      price:
+        type: number
+      size:
+        type: string
+      quantity:
+        type: string
+
+
+  SaveTransaction:
+    required: 
+      - id
+      - productId
+      - email
+      - cardNo
+      - name
+    properties:
+      id:
+        type: string
+      productId:
+        type: string
+      email:
+        type: string
+      cardNo: 
+        type: number
+      name:
+        type: string
+
+
+
+  GetPaymentHistory:
+    required:
+      - token
+      - amount
+    properties:
+      token:
+        type: string
+      amount:
+        type: string
+        

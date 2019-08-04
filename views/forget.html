@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forgot password</title>
+	<style type="text/css">
+		
+body
+{
+	    background-color: #e4e5e6;
+}
+.forgot
+{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: #fff;
+    padding: 60px;
+
+}
+.text
+{
+	
+	 margin-top: 15px;
+	    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 10px;
+
+}
+.text:focus
+{
+	outline: none;
+	border-bottom-color: #8ad4ee;
+}
+
+
+
+
+ .submitButton
+{
+	color: #fff;
+    background-color: #4dbd74;
+    border-color: #4dbd74;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+label
+{
+	margin-bottom: 10px;
+}
+	</style>
+</head>
+
+<body>
+ <div class="forgot">
+ 	
+ 	<form action="" method="post">
+ 	<label>Verification Code:</label> <br>
+	  <input type="text" name="code" placeholder="Enter verification code" class="text">
+	  <br>
+	 <label>New Password:</label> <br>
+	  <input type="text" name="password" placeholder="Enter new password" class="text">
+	  <br>
+	  <input type="Submit" value="Submit" class="submitButton">
+ </form> 
+
+ </div>
+</body>
+</html>

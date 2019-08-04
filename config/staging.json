@@ -1,0 +1,58 @@
+{
+    "port": 3001,
+    "mongoDbUrl": "mongodb://127.0.0.1:27017/arc",
+    "hostAddress": "http://18.204.31.162:3001/",
+    "jwtSecret": "ilovescotchscotchyscotchscotch",
+    "jwtOptions": {
+        "expiresIn": "10h"
+    },
+    "encryption": {
+        "algorithm": "aes-256-ctr",
+        "password": "node@crypto123#-encryption"
+    },
+    "awsConfig": {
+        "poolData": {
+            "UserPoolId": "us-east-1_VMRSynKqU",
+            "ClientId": "3a1erbh1f7bmrmcphdiq8lqijg"
+        },
+        "region": "us-east-1",
+        "identityPoolId": "us-east-1:9c5d505e-b53e-4bb4-ba59-76ff284a4b36",
+        "authProviders": {
+            "facebook": "graph.facebook.com",
+            "google": "accounts.google.com"
+        }
+    },
+    "swaggerDefinition": {
+        "info": {
+            "title": "ARC",
+            "version": "1.0",
+            "description": "ARC API Documentation"
+        },
+        "basePath": "/"
+    },
+    "mailFrom": "afflemailer@gmail.com",
+    "mailCredential": {
+        "service": "gmail",
+        "auth": {
+            "user": "afflemailer@gmail.com",
+            "pass": "appstudioz"
+        },
+        "tls": {
+            "rejectUnauthorized": false
+        }
+
+    },
+    "twitterCredential": {
+        "consumerKey": "y9mtmClR95aGV99k1cPuXkdYT",
+        "consumerSecret": "PxY7qUH0NyyPEQ83vSFyPg6qrJbT9tyO2MW2uqxSh2Du16xyzM",
+        "callback": "http://34.234.92.184:3001/auth/twitter/callback"
+    },
+    "googleCredential": {
+        "apiKey": "AIzaSyDQ-Pzki9fqbNnoZBHC3sqblyMH1UW_Oj8"
+    },
+    "Braintree_Configuration": {
+        "merchantId": "zckr53jj49rgpyj4",
+        "publicKey": "p9vzdmct7pccv9yh",
+        "privateKey": "3a326d5bc51a942ad1a2e681fc31b7a9"
+    }
+}

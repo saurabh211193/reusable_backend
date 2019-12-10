@@ -60,7 +60,7 @@
     "swagger-jsdoc": "^1.9.7",
     "swagger-ui-express": "^2.0.8",
     "websocket-stream": "~0.5.1",
-    "ws": "~0.4.31"
+    "ws": "~3.3.1"
   },
   "devDependencies": {
     "json-loader": "^0.5.7",

@@ -39,7 +39,7 @@
     "lodash": "^4.17.4",
     "mongoose": "^4.11.9",
     "mosca": "^2.8.1",
-    "mqtt": "~0.3.10",
+    "mqtt": "~1.0.0",
     "multer": "^1.3.0",
     "nice-json2csv": "^0.2.2",
     "node-twitter-api": "^1.8.0",

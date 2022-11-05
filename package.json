@@ -65,7 +65,7 @@
   "devDependencies": {
     "json-loader": "^0.5.7",
     "webpack": "^3.5.6",
-    "mocha": "~1.13.0",
+    "mocha": "~10.1.0",
     "should": "~1.2.2",
     "sinon": "^1.10.2"
   },

@@ -34,7 +34,7 @@
     "jshint": "^2.9.5",
     "json2csv": "^3.11.2",
     "json2csv-stream": "^0.1.4",
-    "jsonwebtoken": "^8.2.1",
+    "jsonwebtoken": "^9.0.0",
     "jwk-to-pem": "^1.2.6",
     "lodash": "^4.17.4",
     "mongoose": "^4.11.9",

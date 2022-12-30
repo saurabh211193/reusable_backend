@@ -32,7 +32,7 @@
     "express-session": "^1.15.5",
     "joi": "^11.1.0",
     "jshint": "^2.9.5",
-    "json2csv": "^3.11.2",
+    "json2csv": "^5.0.7",
     "json2csv-stream": "^0.1.4",
     "jsonwebtoken": "^8.2.1",
     "jwk-to-pem": "^1.2.6",
